@@ -1,1 +1,1 @@
-# project_euler_solutions
+This repository contains my solutions for the computing challenges on the website <https://projecteuler.net/archives>.
