@@ -17,7 +17,7 @@ for n = 999:-1:100
     end
 end
 toc
-% Elapsed time is 0.026133 seconds.
+% Elapsed time is 0.025117 seconds.
 
 % result
 disp(res)
@@ -26,6 +26,6 @@ disp(res)
 % function to reverse a number with math
 function reversed = reverse_number(x)
     decimals = 10 .^ (0:log10(x));
-    nums = rem(floor(x ./ decimals), 10);
+    nums = mod(floor(x ./ decimals), 10);
     reversed = sum(nums .* flip(decimals));
 end
